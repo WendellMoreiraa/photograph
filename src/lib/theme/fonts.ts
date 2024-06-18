@@ -1,7 +1,7 @@
-import "@fontsource/roboto";
+import "@fontsource/poppins";
 
 const fonts = {
-  body: "Roboto, sans-serif",
+  body: "Poppins, sans-serif",
 };
 
 export default fonts;
