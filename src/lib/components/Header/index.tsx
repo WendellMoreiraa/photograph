@@ -21,11 +21,12 @@ const Header = () => {
       justifyContent="space-between"
       p="6"
     >
-      <Image src={Logo} />
+      <Image src={Logo} cursor="pointer" />
       <Flex alignItems="center" gap="10">
         <Flex alignItems="center" gap="8">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <Text
+              key={index}
               cursor="pointer"
               color="gray.400"
               _hover={{
