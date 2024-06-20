@@ -6,18 +6,23 @@ import Carrosel3 from "../../../../lib/assets/carrosel3.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./styles/styles.css";
-import { EffectFade, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 const Carrosel = () => {
   const pagination = { clickable: true };
+
   return (
     <Flex h={"580px"} w="full" cursor="pointer">
       <Swiper
         pagination={pagination}
-        modules={[EffectFade, Pagination]}
+        modules={[EffectFade, Pagination, Autoplay]}
         loop={true}
         effect={"fade"}
-        autoplay={true}
+        height={580}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide>
           <Box
@@ -25,7 +30,7 @@ const Carrosel = () => {
             w="full"
             h="full"
             backgroundSize="cover"
-            backgroundPosition="bottom"
+            backgroundPosition="center"
           />
         </SwiperSlide>
         <SwiperSlide>
