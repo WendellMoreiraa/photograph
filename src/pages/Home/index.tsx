@@ -3,6 +3,7 @@ import Carrosel from "./components/Carrosel";
 import AboutMe from "./components/AboutMe";
 import bgHome from "../../lib/assets/bgHome.png";
 import Hero from "./components/Hero";
+import Comments from "./components/Comments";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <Carrosel />
       <AboutMe />
       <Hero />
+      <Comments />
     </Flex>
   );
 };
